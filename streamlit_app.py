@@ -21,7 +21,7 @@ from pypdf import PdfReader
 
 st.set_page_config(
     page_title="AURA | Laboratorio RAG IA",
-    page_icon="✦",
+    page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -469,7 +469,7 @@ with principal:
         st.markdown('<div class="aura-section">Conversación con AURA</div>', unsafe_allow_html=True)
 
     for i, mensaje in enumerate(st.session_state.historial):
-        with st.chat_message(mensaje["rol"], avatar="✦" if mensaje["rol"] == "assistant" else "👤"):
+        with st.chat_message(mensaje["rol"], avatar="🤖" if mensaje["rol"] == "assistant" else "👤"):
             st.markdown(mensaje["texto"])
             if mensaje.get("fuentes"):
                 presentar_fuentes(mensaje["fuentes"], f"hist_{i}")
