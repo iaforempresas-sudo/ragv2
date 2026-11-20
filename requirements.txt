@@ -1,0 +1,5 @@
+streamlit>=1.45,<2
+google-genai>=1.20,<2
+pinecone>=6,<9
+pypdf>=5,<8
+python-docx>=1.1,<2
